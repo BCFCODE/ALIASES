@@ -1,0 +1,32 @@
+{
+  "name": "bcfcode-aliases",
+  "version": "1.0.0",
+  "description": "A set of useful Git aliases for improving workflow and productivity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "git",
+    "aliases",
+    "workflow",
+    "productivity",
+    "bcfcode"
+  ],
+  "author": "Morteza Bakhshandeh",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BCFCODE/ALIASES.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BCFCODE/ALIASES/issues"
+  },
+  "homepage": "https://github.com/BCFCODE/ALIASES#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
