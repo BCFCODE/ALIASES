@@ -1,0 +1,218 @@
+# ┌────────────────────────────────────────────────────────────────────────────┐
+# │    🚀 Supercharge your Git workflow with BCFCODE aliases! 🚀              │
+# │    🎉 Thank you for choosing BCFCODE—where productivity meets magic! 🎉   │
+# │    Curated with precision by Morteza Bakhshandeh, your personal Git        │
+# │     wizard, to make your life easier and your code smoother!               │
+# │    🌟🌟 Become part of the BCFCODE movement—join the community at:        │
+# │    👉 https://bcfcode.ir 👉 and elevate your coding game!🌟🌟            │
+# └────────────────────────────────────────────────────────────────────────────┘
+
+# [user] Section: User Information
+[user]
+    # Your name for Git commits; always ensure this is accurate for team visibility.
+    name = Morteza Bakhshandeh
+    # Email associated with your GitHub or other remote repositories.
+    email = bcfcode@gmail.com
+
+# [core] Section: Core Git Settings
+[core]
+    # Default editor for Git commit messages or other inputs.
+    editor = code --wait  # Opens VS Code and waits for the editor to close.
+    # Ensures consistent line endings across platforms (e.g., Windows ↔ Linux).
+    autocrlf = true
+    # Warn about potentially unsafe line ending conversions.
+    safecrlf = warn
+
+# [diff] Section: Diff Tool Settings
+[diff]
+    # Specifies the tool used to display diffs.
+    tool = vscode  # Use VS Code for viewing diffs.
+
+# [merge] Section: Merge Tool Settings
+[merge]
+    # Specifies the tool used to resolve merge conflicts.
+    tool = vscode  # Use VS Code for merge resolution.
+	ff = false
+
+# Custom VS Code Merge Tool Configuration
+[mergetool "vscode"]
+    # Command to launch VS Code for resolving merge conflicts.
+    cmd = "code --wait $MERGED"
+    # Avoid keeping backup files after resolving merge conflicts.
+    keepBackup = false
+
+# Custom VS Code Diff Tool Configuration
+[difftool "vscode"]
+    # Command to launch VS Code for viewing file differences.
+    cmd = "code --wait --diff $LOCAL $REMOTE"
+    
+# ┌────────────────────────────────────────────────┐
+# │ 🚀 Simplified Git Aliases for Power Users      │
+# │🔧 Curated and Designed by Morteza Bakhshandeh  │
+# └────────────────────────────────────────────────┘ 
+
+[alias]
+# --- 🌟 Basic Git Operations 🌟 ---
+a = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git add .\n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git add .'"  # Add changes to the staging area.
+b = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git branch \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch'"  # Manage branches.
+c = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git commit \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git commit'"  # Commit staged changes.
+p = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git push \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git push'"  # Push changes to the remote repository.
+s = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git status \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status'"  # Show the status of the working directory.
+ss = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git status -s \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s'"  # Show a short status summary.
+
+# --- 🚀 Quick Workflow Enhancements 🚀 ---
+aa="!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git config --global -e \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --global -e'"
+
+dd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git checkout -- . && git reset --hard && git clean -fd \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git checkout -- . && git reset --hard && git clean -fd'"
+rh = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git reset --hard HEAD \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git reset --hard HEAD'"
+
+# --- 🔧 Branch Management 🔧 ---
+bd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git branch -d \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -d'"
+bdd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git branch -D \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -D'"
+bm = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git branch --merged \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --merged'"
+rmb = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git branch --remote --merged \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --remote --merged'"
+ub = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git branch --no-merged \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --no-merged'"
+m = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git switch main \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch main'"
+mf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git switch main -f \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch main -f'"
+sf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git switch -f \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch -f'"
+w = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git switch \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch'"
+
+# --- 🕵️‍♂️ Inspecting Changes and History 🕵️‍♂️ ---
+d = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git diff \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git diff'"
+df = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git difftool -y \n Description: Quickly compare changes with the diff tool, auto-confirming prompts. \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git difftool -y'"
+dfs = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git difftool --staged -y \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git difftool --staged -y'"
+l = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git log \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log'"
+ll = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git log --oneline \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --oneline'"
+lll = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git log --oneline --all --graph \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --oneline --all --graph'"
+lp = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\" \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\"'"
+rrr = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git restore --source=HEAD . \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\"'"
+st = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git log --stat \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --stat'"
+sst = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git log --oneline --stat \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --oneline --stat'"
+th = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git ls-tree HEAD \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git ls-tree HEAD'"
+
+# --- 🔍 Searching and Fetching 🔍 ---
+search = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git log --grep \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --grep'"
+fp = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git fetch --prune \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git fetch --prune'"
+pru = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git remote update origin --prune \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git remote update origin --prune'"
+
+# --- 🛠 Configuration and Utilities 🛠 ---
+con = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git config --global -e \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --global -e'"
+crlf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git config --global core.autocrlf true \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --global core.autocrlf true'"
+h = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n git config --help \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --help'"
+
+# --- ⚠️ Confirmation-Based Commands ⚠️ ---
+z = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n  git status -s && git restore . \n Description: This is works like undue action but for modifed files.\n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete modified files (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git restore . || echo \"Operation canceled.\"; }'"
+
+
+zz = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s)\n  git status -s && git clean -fd \n Description: This works like undue action but for added new files. \n\n©BCFCODE | https://bcfcode.ir -Git aliases- Created by Morteza Bakhshandeh \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete all changes (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git clean -fd || echo \"Operation canceled.\"; }'"
+
+h = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+echo "🚀 Enhance your Git workflow with BCFCODE aliases."; \
+echo "Thank you for choosing BCFCODE—where productivity meets precision."; \
+echo "Curated by Morteza Bakhshandeh to streamline your coding experience."; \
+echo "Join the BCFCODE community and elevate your development skills:"; \
+echo "👉 https://bcfcode.ir"; \
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"; \
+echo "BCFCODE aliases map with descriptions:"; \
+echo \"\"; \
+echo \"  # --- 🌟 Basic Git Operations 🌟 ---\"; \
+echo \"  a  >> git add .\"; \
+echo \"       Description: Add changes to the staging area.\"; \
+echo \"\"; \
+echo \"  b  >> git branch\"; \
+echo \"       Description: Manage branches.\"; \
+echo \"\"; \
+echo \"  c  >> git commit\"; \
+echo \"       Description: Commit staged changes.\"; \
+echo \"\"; \
+echo \"  p  >> git push\"; \
+echo \"       Description: Push changes to the remote repository.\"; \
+echo \"\"; \
+echo \" rrr >> git restore --source=HEAD .\"; \
+echo \"       Description: This command restores all files you deleted, including those removed with git rm <filename>, bringing them back from the latest commit (HEAD) to your working directory.\"; \
+echo \"\"; \
+echo \"  s  >> git status\"; \
+echo \"       Description: Show the status of the working directory.\"; \
+echo \"\"; \
+echo \"  ss >> git status -s\"; \
+echo \"       Description: Show a short status summary.\"; \
+echo \"\"; \
+echo \"  # --- 🚀 Quick Workflow Enhancements 🚀 ---\"; \
+echo \"  aa >> git add . && git status -s && git commit && git push\"; \
+echo \"       Description: Combine multiple steps into a single alias for quick workflows.\"; \
+echo \"\"; \
+echo \"  dd >> git checkout -- . && git reset --hard && git clean -fd\"; \
+echo \"       Description: Reset all unstaged changes and remove untracked files.\"; \
+echo \"\"; \
+echo \"  rh >> git reset --hard HEAD\"; \
+echo \"       Description: Reset to the last committed state.\"; \
+echo \"\"; \
+echo \"  # --- 🔧 Branch Management 🔧 ---\"; \
+echo \"  bd  >> git branch -d\"; \
+echo \"       Description: Delete a branch.\"; \
+echo \"\"; \
+echo \"  bdd >> git branch -D\"; \
+echo \"       Description: Force delete a branch.\"; \
+echo \"\"; \
+echo \"  bm  >> git branch --merged\"; \
+echo \"       Description: List branches merged into HEAD.\"; \
+echo \"\"; \
+echo \"  rmb >> git branch --remote --merged\"; \
+echo \"       Description: List merged remote branches.\"; \
+echo \"\"; \
+echo \"  ub  >> git branch --no-merged\"; \
+echo \"       Description: List branches not yet merged into HEAD.\"; \
+echo \"\"; \
+echo \"  m   >> git switch main\"; \
+echo \"       Description: Switch to the main branch.\"; \
+echo \"\"; \
+echo \"  mf  >> git switch main -f\"; \
+echo \"       Description: Force switch to the main branch.\"; \
+echo \"\"; \
+echo \"  sf  >> git switch -f\"; \
+echo \"       Description: Force switch branches.\"; \
+echo \"\"; \
+echo \"  w   >> git switch\"; \
+echo \"       Description: Switch branches.\"; \
+echo \"\"; \
+echo \"  # --- ⚠️ Confirmation-Based Commands ⚠️ ---\"; \
+echo \"  z   >> git status -s && git restore .\"; \
+echo \"       Description: Works like undo action but for modified files.\"; \
+echo \"\"; \
+echo \"  zz  >> git status -s && git clean -fd\"; \
+echo \"       Description: Works like undo action but for added new files.\"; \
+echo \"\"; \
+echo \"Become part of the BCFCODE movement—join the community at:\"; \
+echo \"    👉 https://bcfcode.ir 👉 and elevate your coding game!\"; \
+echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"'"
+
+ 
+# ┌───────────────────────────────────────────────┐
+# │   🎉 Thank you for using BCFCODE aliases! 🎉 │
+# │  🌐 Join the community at https://bcfcode.ir  │
+# └───────────────────────────────────────────────┘
+
+# [url] Section: URL Substitution
+[url "https://"]
+    # Replace insecure `git://` URLs with `https://` for better security.
+    insteadOf = git://
+
+# [credential] Section: Credential Management
+[credential]
+    # Cache credentials in memory for 1 hour (3600 seconds).
+    helper = cache --timeout=3600
+
+# [url] Section: GitHub SSH Setup
+[url "git@github.com:"]
+    # Replace `https://github.com/` URLs with SSH-based `git@github.com:` URLs.
+    insteadOf = https://github.com/
+
+# [filter] Section: Git Large File Storage (LFS)
+[filter "lfs"]
+    # Settings for Git LFS to manage large files.
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = truegit difftool -y \n Description: Quickly compare changes with the diff tool, auto-confirming prompts.
+    clean = git-lfs clean -- %f
+
+
