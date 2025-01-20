@@ -70,6 +70,7 @@ rh = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━�
 bd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch -d \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -d'"
 bdd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch -D \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -D'"
 bm = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch --merged \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --merged'"
+rp = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git remote prune origin \n Description: Clean up local references to \n remote branches that no longer exist \n on origin. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git remote prune origin'"
 rmb = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch --remote --merged \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --remote --merged'"
 ub = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch --no-merged \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --no-merged'"
 m = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git switch main \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch main'"
@@ -109,6 +110,8 @@ z = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━
 
 zz = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n  git status -s && git clean -fd \n Description: This works like undue action but for added new files. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete all changes (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git clean -fd || echo \"Operation canceled.\"; }'"
 
+
+# BCFCODE ALIASES Help Section
 h = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
 echo \"┌─────────────────────────────────────────────┐\"; \
 echo \"|             -BCFCODE ALIASES-               |\"; \
@@ -182,6 +185,13 @@ echo \"|  ───────────────────             
 echo \"| Description: see all the remote tracking    |\"; \
 echo \"| branches that your local repository is      |\"; \
 echo \"| aware of.                                   |\"; \
+echo \"└─────────────────────────────────────────────┘\"; \
+echo \"┌─────────────────────────────────────────────┐\"; \
+echo \"|  rp >> git remote prune origin              |\"; \
+echo \"|  ─────────────────────────────              |\"; \
+echo \"| Description: Clean up local references to   |\"; \
+echo \"| remote branches that no longer exist        |\"; \
+echo \"| on origin.                                  |\"; \
 echo \"└─────────────────────────────────────────────┘\"; \
 echo \"  bd  >> git branch -d\"; \
 echo \"       Description: Delete a branch.\"; \

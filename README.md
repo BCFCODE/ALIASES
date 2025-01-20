@@ -1,8 +1,8 @@
 
-# 🚀 Supercharge Your Git Workflow with BCFCODE Aliases 🚀
+# 🚀 Supercharge Your Git Workflow with BCFCODE ALIASES 🚀
 
-🎉 **Welcome to BCFCODE Aliases**—Where productivity meets magic! 🎉  
-Curated with precision by **Morteza Bakhshandeh**, your personal Git wizard, these aliases are designed to make your life easier and your code smoother.  
+🎉 **Welcome to BCFCODE ALIASES**—Where productivity meets magic! 🎉  
+Curated with precision by **Morteza Bakhshandeh**, your personal Git wizard, these ALIASES are designed to make your life easier and your code smoother.  
 Transform the way you interact with Git and elevate your coding game with these powerful shortcuts.
 
 🌟 **Become part of the BCFCODE movement**—[Click here and join](https://bcfcode.ir)
@@ -11,7 +11,7 @@ Transform the way you interact with Git and elevate your coding game with these 
 
 ## 🚀 Getting Started with BCFCODE ALIASES
 
-Welcome to **BCFCODE ALIASES**! If it’s your first time using these aliases, follow the steps below to set it up quickly and easily.
+Welcome to **BCFCODE ALIASES**! If it’s your first time using these ALIASES, follow the steps below to set it up quickly and easily.
 
 ### 🛠️ Step 1: Open Your Global Git Configuration
 First, open your global Git configuration file by running:
@@ -36,7 +36,7 @@ Don’t forget to **replace the following user information** at the top of the `
 
 ### 📢 Important Notes:
 - **Name and email**: Make sure these are updated with the correct information. This will be used in your commits and is crucial for proper attribution in collaborative projects.
-- After updating, you’ll be all set to start using the aliases with your Git workflows!
+- After updating, you’ll be all set to start using the ALIASES with your Git workflows!
 
 ### ✅ Done!
 You’ve successfully set up BCFCODE ALIASES. Enjoy enhanced productivity with faster Git commands and better organization!
@@ -46,13 +46,13 @@ You’ve successfully set up BCFCODE ALIASES. Enjoy enhanced productivity with f
 ## Installation
 
 1. Copy the provided `.gitconfig` sections into your `.gitconfig`.
-2. Enjoy a smoother, more efficient workflow with BCFCODE Aliases.
+2. Enjoy a smoother, more efficient workflow with BCFCODE ALIASES.
 
 ---
 
 ## Features
 
-- 🚀 **Quick Git Operations**: Simplify everyday tasks like `git add`, `git commit`, `git push`, and more with easy-to-remember aliases.
+- 🚀 **Quick Git Operations**: Simplify everyday tasks like `git add`, `git commit`, `git push`, and more with easy-to-remember ALIASES.
 - 🔧 **Effortless Branch Management**: Manage branches, switch between them, and clean up merged branches in seconds.
 - 🕵️‍♂️ **Inspect Changes and History**: Easily view diffs, check logs, and search commit history.
 - ⚡ **Configuration Shortcuts**: Access and configure Git settings without the need to type long commands.
@@ -62,16 +62,16 @@ You’ve successfully set up BCFCODE ALIASES. Enjoy enhanced productivity with f
 
 ## Highlights
 
-1. **Engaging Header**: The repo introduces Git aliases with a fun and inviting header to grab attention.
-2. **Organized Layout**: The README is neatly structured with sections like **Getting Started**, **Common Aliases**, and **Contributing**.
+1. **Engaging Header**: The repo introduces Git ALIASES with a fun and inviting header to grab attention.
+2. **Organized Layout**: The README is neatly structured with sections like **Getting Started**, **Common ALIASES**, and **Contributing**.
 3. **Professional Branding**: Every alias description reflects the signature BCFCODE style, making it instantly recognizable and polished.
-4. **Interactive Approach**: The playful yet informative text offers a welcoming experience while explaining the aliases effectively.
+4. **Interactive Approach**: The playful yet informative text offers a welcoming experience while explaining the ALIASES effectively.
 
 ---
 
 ## Contributing
 
-We'd love for you to contribute to **BCFCODE Aliases**! Whether it's fixing a bug, adding a new alias, or improving the documentation, every contribution is valuable.
+We'd love for you to contribute to **BCFCODE ALIASES**! Whether it's fixing a bug, adding a new alias, or improving the documentation, every contribution is valuable.
 
 ### How to Contribute
 
