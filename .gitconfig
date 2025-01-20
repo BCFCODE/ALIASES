@@ -98,12 +98,13 @@ pru = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━�
 # --- 🛠 Configuration and Utilities 🛠 ---
 con = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git config --global -e \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --global -e'"
 crlf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git config --global core.autocrlf true \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --global core.autocrlf true'"
+pr = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git pull --rebase \n Description: fetch + merge --rebase \n Which rewrites history by applying your local \n commits on top of remote changes. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git pull --rebase'"
+
 h = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git config --help \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --help'"
-vv = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch -vv\n Description: Compare your local branch with the corresponding remote branch on GitHub (origin) to stay in sync. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -vv '"
+vv = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch -vv\n Description: Compare your local branch with \n the corresponding remote branch on GitHub \n (origin) to stay in sync. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -vv '"
 
 # --- ⚠️ Confirmation-Based Commands ⚠️ ---
 z = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n  git status -s && git restore . \n Description: This is works like undue action but for modifed files.\n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete modified files (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git restore . || echo \"Operation canceled.\"; }'"
-
 
 zz = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n  git status -s && git clean -fd \n Description: This works like undue action but for added new files. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete all changes (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git clean -fd || echo \"Operation canceled.\"; }'"
 
@@ -139,6 +140,17 @@ echo \"|  c  >> git push                             |\"; \
 echo \"|  ──────────────                             |\"; \
 echo \"| Description: Push changes to the remote     |\"; \
 echo \"| repository.                                 |\"; \
+echo \"└─────────────────────────────────────────────┘\"; \
+echo \"\"; \
+echo \"┌─────────────────────────────────────────────┐\"; \
+echo \"|    --- 🔍 Searching and Fetching 🔍 ---     |\"; \
+echo \"└─────────────────────────────────────────────┘\"; \
+echo \"┌─────────────────────────────────────────────┐\"; \
+echo \"|  pr >> git pull --rebase                    |\"; \
+echo \"|  ───────────────────────                    |\"; \
+echo \"| Description: fetch + merge --rebase         |\"; \
+echo \"| Which rewrites history by applying your     |\"; \
+echo \"| local commits on top of remote changes.     |\"; \
 echo \"└─────────────────────────────────────────────┘\"; \
 echo \" rrr >> git restore --source=HEAD .\"; \
 echo \"       Description: This command restores all files you deleted, including those removed with git rm <filename>, bringing them back from the latest commit (HEAD) to your working directory.\"; \
