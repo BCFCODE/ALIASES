@@ -85,6 +85,7 @@ l = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━
 ll = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git log --oneline \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --oneline'"
 lll = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git log --oneline --all --graph \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --oneline --all --graph'"
 lp = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\" \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\"'"
+r = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch -r \n Description: see all the remote tracking \n branches that your local repository is aware \n of. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -r'"
 rrr = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git restore --source=HEAD . \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\"'"
 st = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git log --stat \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --stat'"
 sst = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git log --oneline --stat \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --oneline --stat'"
@@ -171,7 +172,17 @@ echo \"\"; \
 echo \"  rh >> git reset --hard HEAD\"; \
 echo \"       Description: Reset to the last committed state.\"; \
 echo \"\"; \
-echo \"  # --- 🔧 Branch Management 🔧 ---\"; \
+echo \"\"; \
+echo \"┌─────────────────────────────────────────────┐\"; \
+echo \"|       --- 🔧 Branch Management 🔧 ---       |\"; \
+echo \"└─────────────────────────────────────────────┘\"; \
+echo \"┌─────────────────────────────────────────────┐\"; \
+echo \"|  r  >> git branch -r                        |\"; \
+echo \"|  ───────────────────                        |\"; \
+echo \"| Description: see all the remote tracking    |\"; \
+echo \"| branches that your local repository is      |\"; \
+echo \"| aware of.                                   |\"; \
+echo \"└─────────────────────────────────────────────┘\"; \
 echo \"  bd  >> git branch -d\"; \
 echo \"       Description: Delete a branch.\"; \
 echo \"\"; \
