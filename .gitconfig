@@ -70,6 +70,7 @@ rh = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━�
 bd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch -d \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -d'"
 bdd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch -D \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -D'"
 bm = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch --merged \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --merged'"
+cf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git checkout -f \n Description: forces Git to switch commits or \n branches, discarding any unsaved changes. \n It is ideal for practicing with commits \n as \"lessons\"  or \"chapters\", letting you reset \n and switch freely without saving your work. \n Use with caution, as changes are lost \n permanently. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git checkout -f'"
 rp = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git remote prune origin \n Description: Clean up local references to \n remote branches that no longer exist \n on origin. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git remote prune origin'"
 rmb = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch --remote --merged \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --remote --merged'"
 ub = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> You ran the alias of these command(s):\n git branch --no-merged \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --no-merged'"
@@ -192,6 +193,17 @@ echo \"|  ───────────────────────�
 echo \"| Description: Clean up local references to   |\"; \
 echo \"| remote branches that no longer exist        |\"; \
 echo \"| on origin.                                  |\"; \
+echo \"└─────────────────────────────────────────────┘\"; \
+echo \"┌─────────────────────────────────────────────┐\"; \
+echo \"|  cf >> git checkout -f                      |\"; \
+echo \"|  ─────────────────────                      |\"; \
+echo \"| Description: forces Git to switch commits   |\"; \
+echo \"| or branches, discarding any unsaved changes |\"; \
+echo \"| It is ideal for practicing with commits as  |\"; \
+echo \"| lessons or chapters, letting you reset      |\"; \
+echo \"| and switch freely without saving your work. |\"; \
+echo \"| Use with caution, as changes are lost       |\"; \
+echo \"| permanently.                                |\"; \
 echo \"└─────────────────────────────────────────────┘\"; \
 echo \"  bd  >> git branch -d\"; \
 echo \"       Description: Delete a branch.\"; \
