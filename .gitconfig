@@ -87,7 +87,6 @@ sst = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━�
 th = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git ls-tree HEAD \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git ls-tree HEAD'"
 
 # --- 🔍 Searching and Fetching 🔍 ---
-search = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git log --grep \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --grep'"
 fp = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git fetch --prune \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git fetch --prune'"
 pru = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git remote update origin --prune \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git remote update origin --prune'"
 
@@ -101,11 +100,30 @@ vv = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━�
 # --- 🚀 Quick Workflow Enhancements 🚀 ---
 aa ="!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git add . && git status -s && git commit && git push \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git add . && git status -s && git commit && git push'"
 cf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> Enter the commit hash you want to checkout:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -p \"Target Commit Hash: \" hash; echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git checkout -f $hash \n Description: forces Git to switch commits or \n branches, discarding any unsaved changes. \n It is ideal for practicing with commits \n as \\\"lessons\\\" or \\\"chapters\\\", letting you reset \n and switch freely without saving your work. \n Use with caution, as changes are lost \n permanently. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; git checkout -f $hash'"
-pch = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n✨ Ready to dive into your commit history?\n> Enter how many recent commits you’d like to \n explore patches for:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -p \"🔢 Go ahead, type a number and press Enter: \" numberOfCommits; echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 You just executed the following command:\n > git log --patch -$numberOfCommits \n📜 Description: This command reveals the \n changes (patches) in the specified number of \n recent commits, letting you inspect updates \n line-by-line. \n It’s perfect for reviewing changes safely \n as this is a read-only operation—no changes \n are made.\n⚠️  Pro Tip: Be careful when sharing sensitive \n changes!\n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; git log --patch -$numberOfCommits'"
 dd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git checkout -- . && git reset --hard && git clean -fd \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git checkout -- . && git reset --hard && git clean -fd'"
+pch = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n✨ Ready to dive into your commit history?\n> Enter how many recent commits you’d like to \n explore patches for:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -p \"🔢 Go ahead, type a number and press Enter: \" numberOfCommits; echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 You just executed the following command:\n > git log --patch -$numberOfCommits \n📜 Description: This command reveals the \n changes (patches) in the specified number of \n recent commits, letting you inspect updates \n line-by-line. \n It’s perfect for reviewing changes safely \n as this is a read-only operation—no changes \n are made.\n⚠️  Pro Tip: Be careful when sharing sensitive \n changes!\n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; git log --patch -$numberOfCommits'"
 rh = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git reset --hard HEAD \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git reset --hard HEAD'"
+se = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+echo \"✨ Ready to search your commit history?\"; \
+read -p \"🔑 Enter the keyword to search for: \" keyword; \
+echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+read -p \" What kind of log you want? \n Select (oneline=o || verbose=v)? [o/v]: \" logType; \
+if [ \"$logType\" = \"o\" ]; then \
+    echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+    echo -e \" You ran the alias of these command(s):\n > git log --oneline --grep=$keyword \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+    git log --oneline --grep=$keyword; \
+elif [ \"$logType\" = \"v\" ]; then \
+    echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+    echo -e \" You ran the alias of these command(s):\n > git log --grep=$keyword \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+    git log --grep=$keyword; \
+else \
+    echo \" ❌ Invalid choice. \n Choose one of ('o'= oneline || 'v'= verbose)\"; \
+fi'"
+
+
 z = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n >  git status -s && git restore . \n Description: This is works like undue action but for modifed files.\n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete modified files (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git restore . || echo \"Operation canceled.\"; }'"
 zz = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n >  git status -s && git clean -fd \n Description: This works like undue action but for added new files. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete all changes (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git clean -fd || echo \"Operation canceled.\"; }'"
+
 
 
 # BCFCODE ALIASES Help Section
@@ -258,6 +276,18 @@ h = "!sh -c 'printf \"%s\n\" \
 \"| It’s perfect for reviewing changes safely   |\" \
 \"| as this is a read-only operation—no changes |\" \
 \"| are made.                                   |\" \
+\"└─────────────────────────────────────────────┘\" \
+\"┌─────────────────────────────────────────────┐\" \
+\"|  se >> git log --grep=<keyword>             |\" \
+\"|  ──────────────────────────────             |\" \
+\"| Description: Searches commit messages for   |\" \
+\"| a specific keyword or phrase, allowing you  |\" \
+\"| to quickly locate relevant changes in the   |\" \
+\"| history of this repository.                 |\" \
+\"| Perfect for tracking issues or changes tied |\" \
+\"| to specific topics or identifiers.          |\" \
+\"| Pro Tip: Use meaningful keywords for better |\" \
+\"| search results.                             |\" \
 \"└─────────────────────────────────────────────┘\" \
 \"  aa >> git add . && git status -s && git commit && git push\" \
 \"       Description: Combine multiple steps into a single alias for quick workflows.\" \
