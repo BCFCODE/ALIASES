@@ -57,8 +57,7 @@ a = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━
 b = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch'"  # Manage branches.
 c = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git commit \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git commit'"  # Commit staged changes.
 p = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git push \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git push'"  # Push changes to the remote repository.
-s = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git status \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status'"  # Show the status of the working directory.
-ss = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git status -s \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s'"  # Show a short status summary.
+s = "!sh -c 'echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n You ran the alias of these command(s):\\n > git status \\n Choose an option:\\n  [s] – Show a concise status summary\\n  [l] – Display a detailed status overview \\n--------------------Need help? Just run: git h\\n--Git ALIASES--Created by Morteza Bakhshandeh-- \\n©BCFCODE ------------------- https://bcfcode.ir \\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -n 1 choice; echo \"\"; if [ \"$choice\" = \"s\" ]; then git status -s; elif [ \"$choice\" = \"l\" ]; then git status; else echo \"✖ Invalid selection. \n  Please choose a valid command:\n    >> [s] for a short status\n    >> [l] for a detailed status\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; fi'"
 
 # --- 🔧 Branch Management 🔧 ---
 bd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch -d \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -d'"
@@ -69,16 +68,18 @@ rmb = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━�
 ub = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch --no-merged \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch --no-merged'"
 m = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git switch main \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch main'"
 mf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git switch main -f \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch main -f'"
+pr = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git pull --rebase \n Description: fetch + merge --rebase \n Which rewrites history by applying your local \n commits on top of remote changes. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git pull --rebase'"
 sf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git switch -f \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch -f'"
 w = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git switch \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git switch'"
+vv = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch -vv\n Description: Compare your local branch with \n the corresponding remote branch on GitHub \n (origin) to stay in sync. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -vv '"
 
 # --- 🕵️‍♂️ Inspecting Changes and History 🕵️‍♂️ ---
-d = "!sh -c 'echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n You ran the alias of these command(s):\\n > git diff \\n Choose an option:\\n  [f] Save to file and open in VS Code\\n  [l] Display in terminal \\n--------------------Need help? Just run: git h\\n--Git ALIASES--Created by Morteza Bakhshandeh-- \\n©BCFCODE ------------------- https://bcfcode.ir \\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -n 1 choice; echo \"\"; if [ \"$choice\" = \"f\" ]; then mkdir -p logs && git diff > logs/diffs.md && code logs/diffs.md; elif [ \"$choice\" = \"l\" ]; then git diff; else echo \"> Invalid selection. \n Please choose a valid command:\n >> [f] for file or [l] Display in terminal\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; fi'"
+d = "!sh -c 'echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n You ran the alias of these command(s):\\n > git diff \\n Choose an option:\\n  [f] Save to file and open in VS Code\\n  [l] Display in terminal \\n--------------------Need help? Just run: git h\\n--Git ALIASES--Created by Morteza Bakhshandeh-- \\n©BCFCODE ------------------- https://bcfcode.ir \\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -n 1 choice; echo \"\"; if [ \"$choice\" = \"f\" ]; then mkdir -p logs && git diff > logs/diffs.md && code logs/diffs.md; elif [ \"$choice\" = \"l\" ]; then git diff; else echo \"✖ Invalid selection. \n Please choose a valid command:\n >> [f] for file or [l] Display in terminal\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; fi'"
 df = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git difftool -y \n Description: Quickly compare changes with the diff tool, auto-confirming prompts. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git difftool -y'"
 dfs = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git difftool --staged -y \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git difftool --staged -y'"
 lll = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git log \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log'"
 ll = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git log --oneline \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --oneline'"
-l = "!sh -c 'echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n You ran the alias of these command(s):\\n > git log --oneline --all --graph \\n Choose an option:\\n  [f] Save to file and open in VS Code\\n  [l] Display in terminal \\n--------------------Need help? Just run: git h\\n--Git ALIASES--Created by Morteza Bakhshandeh-- \\n©BCFCODE ------------------- https://bcfcode.ir \\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -n 1 choice; echo \"\"; if [ \"$choice\" = \"f\" ]; then mkdir -p logs && git log --oneline --all --graph > logs/commits.md && code logs/commits.md; elif [ \"$choice\" = \"l\" ]; then git log --oneline --all --graph; else echo \"> Invalid selection. \n Please choose a valid command:\n >> [f] for file or [l] Display in terminal\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; fi'"
+l = "!sh -c 'echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n You ran the alias of these command(s):\\n > git log --oneline --all --graph \\n Choose an option:\\n  [f] Save to file and open in VS Code\\n  [l] Display in terminal \\n--------------------Need help? Just run: git h\\n--Git ALIASES--Created by Morteza Bakhshandeh-- \\n©BCFCODE ------------------- https://bcfcode.ir \\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -n 1 choice; echo \"\"; if [ \"$choice\" = \"f\" ]; then mkdir -p logs && git log --oneline --all --graph > logs/commits.md && code logs/commits.md; elif [ \"$choice\" = \"l\" ]; then git log --oneline --all --graph; else echo \"✖ Invalid selection. \n Please choose a valid command:\n >> [f] for file or [l] Display in terminal\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; fi'"
 lp = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\" \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\"'"
 r = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch -r \n Description: see all the remote tracking \n branches that your local repository is aware \n of. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -r'"
 rrr = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git restore --source=HEAD . \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log --pretty=format:\"%Cgreen%an%Creset committed %Cblue%h%Creset on %Cred%cd%Creset\"'"
@@ -93,14 +94,11 @@ pru = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━�
 # --- 🛠 Configuration and Utilities 🛠 ---
 con = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git config --global -e \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --global -e'"
 crlf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git config --global core.autocrlf true \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --global core.autocrlf true'"
-pr = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git pull --rebase \n Description: fetch + merge --rebase \n Which rewrites history by applying your local \n commits on top of remote changes. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git pull --rebase'"
 h = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git config --help \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git config --help'"
-vv = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch -vv\n Description: Compare your local branch with \n the corresponding remote branch on GitHub \n (origin) to stay in sync. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -vv '"
 
 # --- 🚀 Quick Workflow Enhancements 🚀 ---
 aa ="!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git add . && git status -s && git commit && git push \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git add . && git status -s && git commit && git push'"
 cf = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n> Enter the commit hash you want to checkout:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -p \"Target Commit Hash: \" hash; echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git checkout -f $hash \n Description: forces Git to switch commits or \n branches, discarding any unsaved changes. \n It is ideal for practicing with commits \n as \\\"lessons\\\" or \\\"chapters\\\", letting you reset \n and switch freely without saving your work. \n Use with caution, as changes are lost \n permanently. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; git checkout -f $hash'"
-dd = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git checkout -- . && git reset --hard && git clean -fd \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git checkout -- . && git reset --hard && git clean -fd'"
 lst = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
 echo \"✨ Ready to explore commits for specific file?\"; \
 read -p \"🔑 Enter the file name to show commits: \" fileName; \
@@ -119,7 +117,6 @@ else \
 fi'"
 
 pch = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n✨ Ready to dive into your commit history?\n> Enter how many recent commits you’d like to \n explore patches for:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -p \"🔢 Go ahead, type a number and press Enter: \" numberOfCommits; echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 You just executed the following command:\n > git log --patch -$numberOfCommits \n📜 Description: This command reveals the \n changes (patches) in the specified number of \n recent commits, letting you inspect updates \n line-by-line. \n It’s perfect for reviewing changes safely \n as this is a read-only operation—no changes \n are made.\n⚠️  Pro Tip: Be careful when sharing sensitive \n changes!\n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; git log --patch -$numberOfCommits'"
-rh = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git reset --hard HEAD \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git reset --hard HEAD'"
 se = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
 echo \"✨ Ready to search your commit history?\"; \
 read -p \"🔑 Enter the keyword to search for: \" keyword; \
@@ -142,7 +139,6 @@ z = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━
 zz = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n >  git status -s && git clean -fd \n Description: This works like undue action but for added new files. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git status -s && read -p \"\n Are you sure? This will delete all changes (Yes=Enter/No=Ctrl+C): \" choice && { [ -z \"$choice\" ] && git clean -fd || echo \"Operation canceled.\"; }'"
 
 
-
 # BCFCODE ALIASES Help Section
 h = "!sh -c 'printf \"%s\n\" \
 \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" \
@@ -158,25 +154,10 @@ h = "!sh -c 'printf \"%s\n\" \
 \"└─────────────────────────────────────────────┘\" \
 \"┌─────────────────────────────────────────────┐\" \
 \"|  a  >> git add .                            |\" \
-\"|  ───────────────                            |\" \
-\"| Description: Add changes to the staging     |\" \
-\"| area.                                       |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
 \"|  b  >> git branch                           |\" \
-\"|  ────────────────                           |\" \
-\"| Description: Manage branches.               |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
 \"|  c  >> git commit                           |\" \
-\"|  ────────────────                           |\" \
-\"| Description: Commit staged changes.         |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
-\"|  c  >> git push                             |\" \
-\"|  ──────────────                             |\" \
-\"| Description: Push changes to the remote     |\" \
-\"| repository.                                 |\" \
+\"|  p  >> git push                             |\" \
+\"| con >> git config --global -e               |\" \
 \"└─────────────────────────────────────────────┘\" \
 \"\" \
 \"┌─────────────────────────────────────────────┐\" \
@@ -184,137 +165,29 @@ h = "!sh -c 'printf \"%s\n\" \
 \"└─────────────────────────────────────────────┘\" \
 \"┌─────────────────────────────────────────────┐\" \
 \"|  pr >> git pull --rebase                    |\" \
-\"|  ───────────────────────                    |\" \
-\"| Description: fetch + merge --rebase         |\" \
-\"| Which rewrites history by applying your     |\" \
-\"| local commits on top of remote changes.     |\" \
 \"└─────────────────────────────────────────────┘\" \
-\" rrr >> git restore --source=HEAD .\" \
-\"       Description: This command restores all files you deleted, including those removed with git rm <filename>, bringing them back from the latest commit (HEAD) to your working directory.\" \
-\"\" \
-\"  s  >> git status\" \
-\"       Description: Show the status of the working directory.\" \
-\"\" \
-\"  ss >> git status -s\" \
-\"       Description: Show a short status summary.\" \
-\"\" \
 \"\" \
 \"┌─────────────────────────────────────────────┐\" \
 \"|       --- 🔧 Branch Management 🔧 ---       |\" \
 \"└─────────────────────────────────────────────┘\" \
 \"┌─────────────────────────────────────────────┐\" \
 \"|  r  >> git branch -r                        |\" \
-\"|  ───────────────────                        |\" \
-\"| Description: see all the remote tracking    |\" \
-\"| branches that your local repository is      |\" \
-\"| aware of.                                   |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
 \"|  rp >> git remote prune origin              |\" \
-\"|  ─────────────────────────────              |\" \
-\"| Description: Clean up local references to   |\" \
-\"| remote branches that no longer exist        |\" \
-\"| on origin.                                  |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
 \"|  cf >> git checkout -f <commit hash>        |\" \
-\"|  ───────────────────────────────────        |\" \
-\"| Description: forces Git to switch commits   |\" \
-\"| or branches, discarding any unsaved changes |\" \
-\"| It is ideal for practicing with commits as  |\" \
-\"| lessons or chapters, letting you reset      |\" \
-\"| and switch freely without saving your work. |\" \
-\"| Use with caution, as changes are lost       |\" \
-\"| permanently.                                |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"  bd  >> git branch -d\" \
-\"       Description: Delete a branch.\" \
-\"\" \
-\"  bdd >> git branch -D\" \
-\"       Description: Force delete a branch.\" \
-\"\" \
-\"  bm  >> git branch --merged\" \
-\"       Description: List branches merged into HEAD.\" \
-\"\" \
-\"  rmb >> git branch --remote --merged\" \
-\"       Description: List merged remote branches.\" \
-\"\" \
-\"  ub  >> git branch --no-merged\" \
-\"       Description: List branches not yet merged into HEAD.\" \
-\"\" \
-\"  m   >> git switch main\" \
-\"       Description: Switch to the main branch.\" \
-\"\" \
-\"  mf  >> git switch main -f\" \
-\"       Description: Force switch to the main branch.\" \
-\"\" \
-\"  sf  >> git switch -f\" \
-\"       Description: Force switch branches.\" \
-\"\" \
-\"┌─────────────────────────────────────────────┐\" \
-\"|  vv  >> git branch -vv                      |\" \
-\"|  ─────────────────────                      |\" \
-\"| Description: Compare your local branch with |\" \
-\"| the corresponding remote branch on GitHub   |\" \
-\"| (origin) to stay in sync.                   |\" \
+\"|  vv >> git branch -vv                       |\" \
+\"|  w  >> git switch                           |\" \
 \"└─────────────────────────────────────────────┘\" \
 \"\" \
-\"┌─────────────────────────────────────────────┐\" \
-\"|  w   >> git switch                          |\" \
-\"|  ─────────────────                          |\" \
-\"| Description: Switch branches.               |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"\" \
-\"┌─────────────────────────────────────────────┐\" \
-\"|   --- ⚠️ Confirmation-Based Commands ⚠️ ---   |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
-\"|  z   >> git status -s && git restore .      |\" \
-\"|  ─────────────────────────────────────      |\" \
-\"| Description: Works like undo action but for |\" \
-\"| modified files.                             |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
-\"|  zz  >> git status -s && git clean -fd      |\" \
-\"|  ─────────────────────────────────────      |\" \
-\"| Description: Works like undo action but for |\" \
-\"| added new files.                            |\" \
-\"└─────────────────────────────────────────────┘\" \
 \"┌─────────────────────────────────────────────┐\" \
 \"|  --- 🚀 Quick Workflow Enhancements 🚀 ---  |\" \
 \"└─────────────────────────────────────────────┘\" \
 \"┌─────────────────────────────────────────────┐\" \
+\"|  aa >> git add .                            |\" \
+\"|        && git status -s                     |\" \
+\"|        && git commit                        |\" \
+\"|        && git push                          |\" \
 \"| pch >> git log --patch -<numberOfCommits>   |\" \
-\"| ─────────────────────────────────────────   |\" \
-\"| Description: This command reveals the       |\" \
-\"| changes (patches) in the specified number   |\" \
-\"| of recent commits, letting you inspect      |\" \
-\"| updates line-by-line.                       |\" \
-\"| It’s perfect for reviewing changes safely   |\" \
-\"| as this is a read-only operation—no changes |\" \
-\"| are made.                                   |\" \
 \"└─────────────────────────────────────────────┘\" \
-\"┌─────────────────────────────────────────────┐\" \
-\"|  se >> git log --grep=<keyword>             |\" \
-\"|  ──────────────────────────────             |\" \
-\"| Description: Searches commit messages for   |\" \
-\"| a specific keyword or phrase, allowing you  |\" \
-\"| to quickly locate relevant changes in the   |\" \
-\"| history of this repository.                 |\" \
-\"| Perfect for tracking issues or changes tied |\" \
-\"| to specific topics or identifiers.          |\" \
-\"| Pro Tip: Use meaningful keywords for better |\" \
-\"| search results.                             |\" \
-\"└─────────────────────────────────────────────┘\" \
-\"  aa >> git add . && git status -s && git commit && git push\" \
-\"       Description: Combine multiple steps into a single alias for quick workflows.\" \
-\"\" \
-\"  dd >> git checkout -- . && git reset --hard && git clean -fd\" \
-\"       Description: Reset all unstaged changes and remove untracked files.\" \
-\"\" \
-\"  rh >> git reset --hard HEAD\" \
-\"       Description: Reset to the last committed state.\" \
-\"\" \
 \"┌─────────────────────────────────────────────┐\" \
 \"| Become part of the BCFCODE movement—join    |\" \
 \"| community at: ────────── https://bcfcode.ir |\" \
