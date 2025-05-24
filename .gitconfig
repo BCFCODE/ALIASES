@@ -56,6 +56,30 @@
 a = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git add .\n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git add .'"  # Add changes to the staging area.
 b = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch'"  # Manage branches.
 c = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git commit \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git commit'"  # Commit staged changes.
+d = "!sh -c '\
+echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n\
+ You ran the alias of these command(s):\\n\
+ > git diff / git difftool\\n\
+ Choose an option:\\n\
+  [f] Save to file and open in VS Code\\n\
+  [l] Display in terminal\\n\
+  [d] Run git difftool <commit1> <commit2>\\n\
+--------------------Need help? Just run: git h\\n\
+--Git ALIASES--Created by Morteza Bakhshandeh-- \\n\
+©BCFCODE ------------------- https://bcfcode.ir \\n\
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+read -n 1 choice; echo \"\"; \
+if [ \"$choice\" = \"f\" ]; then \
+  mkdir -p logs && git diff > logs/diffs.md && code logs/diffs.md; \
+elif [ \"$choice\" = \"l\" ]; then \
+  git diff; \
+elif [ \"$choice\" = \"d\" ]; then \
+  echo \"Enter first commit hash:\"; read commit1; \
+  echo \"Enter second commit hash:\"; read commit2; \
+  git difftool \"$commit1\" \"$commit2\"; \
+else \
+  echo \"✖ Invalid selection.\\nPlease choose a valid command:\\n >> [f] file | [l] terminal | [d] difftool\\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; \
+fi'"
 p = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git push \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git push'"  # Push changes to the remote repository.
 s = "!sh -c 'echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n You ran the alias of these command(s):\\n > git status \\n Choose an option:\\n  [s] – Show a concise status summary\\n  [l] – Display a detailed status overview \\n--------------------Need help? Just run: git h\\n--Git ALIASES--Created by Morteza Bakhshandeh-- \\n©BCFCODE ------------------- https://bcfcode.ir \\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -n 1 choice; echo \"\"; if [ \"$choice\" = \"s\" ]; then git status -s; elif [ \"$choice\" = \"l\" ]; then git status; else echo \"✖ Invalid selection. \n  Please choose a valid command:\n    >> [s] for a short status\n    >> [l] for a detailed status\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; fi'"
 
@@ -74,7 +98,6 @@ w = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━
 vv = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git branch -vv\n Description: Compare your local branch with \n the corresponding remote branch on GitHub \n (origin) to stay in sync. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git branch -vv '"
 
 # --- 🕵️‍♂️ Inspecting Changes and History 🕵️‍♂️ ---
-d = "!sh -c 'echo -e \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n You ran the alias of these command(s):\\n > git diff \\n Choose an option:\\n  [f] Save to file and open in VS Code\\n  [l] Display in terminal \\n--------------------Need help? Just run: git h\\n--Git ALIASES--Created by Morteza Bakhshandeh-- \\n©BCFCODE ------------------- https://bcfcode.ir \\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; read -n 1 choice; echo \"\"; if [ \"$choice\" = \"f\" ]; then mkdir -p logs && git diff > logs/diffs.md && code logs/diffs.md; elif [ \"$choice\" = \"l\" ]; then git diff; else echo \"✖ Invalid selection. \n Please choose a valid command:\n >> [f] for file or [l] Display in terminal\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"; fi'"
 df = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git difftool -y \n Description: Quickly compare changes with the diff tool, auto-confirming prompts. \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git difftool -y'"
 dfs = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git difftool --staged -y \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git difftool --staged -y'"
 lll = "!sh -c 'echo \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n You ran the alias of these command(s):\n > git log \n--------------------Need help? Just run: git h\n--Git ALIASES--Created by Morteza Bakhshandeh-- \n©BCFCODE ------------------- https://bcfcode.ir \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\" && git log'"
@@ -156,6 +179,7 @@ h = "!sh -c 'printf \"%s\n\" \
 \"|  a  >> git add .                            |\" \
 \"|  b  >> git branch                           |\" \
 \"|  c  >> git commit                           |\" \
+\"|  d  >> git diff                             |\" \
 \"|  p  >> git push                             |\" \
 \"| con >> git config --global -e               |\" \
 \"└─────────────────────────────────────────────┘\" \
@@ -194,10 +218,6 @@ h = "!sh -c 'printf \"%s\n\" \
 \"| and elevate your coding game!               |\" \
 \"└─────────────────────────────────────────────┘\" \
 \"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\"'"
-
-
-
-
  
 # ┌───────────────────────────────────────────────┐
 # │   🎉 Thank you for using BCFCODE ALIASES! 🎉 │
